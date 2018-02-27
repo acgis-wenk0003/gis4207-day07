@@ -10,6 +10,8 @@ namespace VarsAndExp
     {
         static void Main(string[] args)
         {
+            double dd = Dms2Dd(50, 40, 22.11, "N");
+            Console.ReadLine();
         }
     
     
@@ -21,13 +23,5 @@ namespace VarsAndExp
             return deg + minutes + seconds;
         }
     }
-    class Test_Program
-    {
-        void test()
-        {
-           
-           double p = Program.Dms2Dd(50, 40, 20.11, "N");
-           
-        }
-    }    
+    
 }
