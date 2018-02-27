@@ -11,5 +11,13 @@ namespace VarsAndExp
         static void Main(string[] args)
         {
         }
+    
+    
+        static double Dms2Dd(int deg, int min, double sec, string bearing)
+        {
+            int minutes = min / 60;
+            double seconds = sec / 3600; 
+            return deg + minutes + seconds;
+        }
     }
 }
