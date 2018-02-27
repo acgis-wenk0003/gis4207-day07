@@ -11,6 +11,7 @@ namespace VarsAndExp
         static void Main(string[] args)
         {
             double dd = Dms2Dd(50, 40, 22.11, "N");
+            Console.WriteLine(dd);
             Console.ReadLine();
         }
     
