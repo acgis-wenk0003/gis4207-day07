@@ -12,7 +12,8 @@ namespace FlowControl
         static void Main(string[] args)
         {
             int count_number = 12;
-            CountDownWithFor(count_number);
+            //CountDownWithFor(count_number);
+            CountDownWithWhile(count_number);
             Console.ReadLine();
         }
     
@@ -32,6 +33,20 @@ namespace FlowControl
                 Console.WriteLine(i);
                     
                     
+            }
+        }
+        public static void CountDownWithWhile(int fromValue)
+        {
+            int i = fromValue;
+            while (i > -1)
+            {
+                if (i == 1)
+                {
+                    i -= 1;
+                    continue;
+                }
+                Console.WriteLine(i);
+                i -= 1;
             }
         }
     }
