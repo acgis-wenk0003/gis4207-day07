@@ -11,10 +11,28 @@ namespace FlowControl
     {
         static void Main(string[] args)
         {
+            int count_number = 12;
+            CountDownWithFor(count_number);
+            Console.ReadLine();
         }
-    }
-    /// converts dms to decimal degrees
-    { 
-        static Dms2Dd(int deg, int min, double sec, string bearing)
+    
+    /// count to 0 to value skipping 1
+     
+        public static void CountDownWithFor(int fromValue)
+        {
+            for (int i = fromValue; i>=0; i--)
+            {
+      
+                if (i == 1)
+                {
+                    continue;
+                 
+                }
+               
+                Console.WriteLine(i);
+                    
+                    
+            }
+        }
     }
 }
