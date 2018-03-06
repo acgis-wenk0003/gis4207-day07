@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace FlowControl
 {
-    class Program
-
+    public class Program
     {
+        public static string g_publicVar = "Public";
+        public static string _internalVar = "Internal";
+        public static string _privateVar = "Private";
+
         static void Main(string[] args)
         {
             int count_number = 12;
-            //CountDownWithFor(count_number);
-            //CountDownWithWhile(count_number);
+            CountDownWithFor(count_number);
+            CountDownWithWhile(count_number);
             CountDownWithDo(count_number);
             Console.ReadLine();
         }
