@@ -21,8 +21,7 @@ namespace FlowControl
             Console.ReadLine();
         }
     
-    /// count to 0 to value skipping 1
-     
+        /// count to 0 to value skipping 1
         public static void CountDownWithFor(int fromValue)
         {
             for (int i = fromValue; i>=0; i--)
@@ -31,12 +30,8 @@ namespace FlowControl
                 if (i == 1)
                 {
                     continue;
-                 
                 }
-               
                 Console.WriteLine(i);
-                    
-                    
             }
         }
         public static void CountDownWithWhile(int fromValue)
