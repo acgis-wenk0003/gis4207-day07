@@ -9,8 +9,8 @@ namespace FlowControl
     public class Program
     {
         public static string g_publicVar = "Public";
-        public static string _internalVar = "Internal";
-        public static string _privateVar = "Private";
+        internal static string _internalVar = "Internal";
+        private static string _privateVar = "Private";
 
         static void Main(string[] args)
         {
